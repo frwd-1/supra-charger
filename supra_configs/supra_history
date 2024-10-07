@@ -9,3 +9,68 @@ SmrPublicKey { account_address: "0x5ba50bc539cbcaae364f596d2e927a6b98b0c7ca1261b
 -------------------------------------------------------------------------
 
 
+Local: (2024-10-07 22:21:18.351351376 +00:00)	 Utc: (2024-10-07 22:21:18.355141084 UTC)
+
+CMD:
+AccountTool::FundWithFaucet
+Output:
+General: Message: "", Cause: Err("HTTP status client error (404 Not Found) for url (https://rpc-testnet.supra.com/rpc/rpc/v1/wallet/faucet/5ba50bc539cbcaae364f596d2e927a6b98b0c7ca1261b2fc9bc691a8320a37d3)")
+Local: (2024-10-07 22:21:59.990434006 +00:00)	 Utc: (2024-10-07 22:21:59.994470923 UTC)
+
+CMD:
+AccountTool::FundWithFaucet
+Output:
+General: Message: "", Cause: Err("HTTP status client error (404 Not Found) for url (https://rpc-testnet.supra.com/rpc/rpc/v1/wallet/faucet/5ba50bc539cbcaae364f596d2e927a6b98b0c7ca1261b2fc9bc691a8320a37d3)")
+Local: (2024-10-07 22:26:29.048507339 +00:00)	 Utc: (2024-10-07 22:26:29.052254589 UTC)
+
+CMD:
+ListProfile(ListProfileArgs { reveal_secrets: true })
+Output:
+	(*) SUPRA-CHARGER
+ed25519_secret_key: 1503b5776cecb05f61166063b872f5f9170929e0c788d3f037bd5157077d9f19
+SmrPublicKey { account_address: "0x5ba50bc539cbcaae364f596d2e927a6b98b0c7ca1261b2fc9bc691a8320a37d3", ed25519_public_key: 9b67ffff4ef2a79b1cafa2662d22315fb2e655dc5efa7005e0bd5905c2c7a5d9 }
+
+
+
+Local: (2024-10-07 22:27:34.276362008 +00:00)	 Utc: (2024-10-07 22:27:34.280195800 UTC)
+
+CMD:
+AccountTool::FundWithFaucet
+Output:
+General: Message: "", Cause: Err("HTTP status client error (404 Not Found) for url (https://rpc-testnet.supra.com/rpc/rpc/v1/wallet/faucet/5ba50bc539cbcaae364f596d2e927a6b98b0c7ca1261b2fc9bc691a8320a37d3)")
+Local: (2024-10-07 22:30:14.947526972 +00:00)	 Utc: (2024-10-07 22:30:14.951315013 UTC)
+
+CMD:
+AccountTool::FundWithFaucet
+Output:
+General: Message: "", Cause: Err("HTTP status client error (404 Not Found) for url (https://rpc-testnet.supra.com/rpc/rpc/v1/wallet/faucet/5ba50bc539cbcaae364f596d2e927a6b98b0c7ca1261b2fc9bc691a8320a37d3)")
+Local: (2024-10-07 22:36:04.382689383 +00:00)	 Utc: (2024-10-07 22:36:04.386416092 UTC)
+
+CMD:
+AccountTool::FundWithFaucet
+Output:
+{
+  "Accepted": "0xfca3fbf6c097154796c9963ce6d03c9dee6973e85e3147706bf99d9e51d5596f"
+}
+
+
+Local: (2024-10-07 22:46:54.053232837 +00:00)	 Utc: (2024-10-07 22:46:54.055477170 UTC)
+
+CMD:
+Init
+Output:
+{
+  "Result": "Success"
+}
+
+
+Local: (2024-10-07 22:49:32.491403257 +00:00)	 Utc: (2024-10-07 22:49:32.494154049 UTC)
+
+CMD:
+Init
+Output:
+{
+  "Result": "Success"
+}
+
+
