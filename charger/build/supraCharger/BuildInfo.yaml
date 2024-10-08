@@ -28,9 +28,9 @@ compiled_package_info:
     additional_named_addresses: {}
     architecture: ~
     fetch_deps_only: false
-    skip_fetch_latest_git_deps: true
+    skip_fetch_latest_git_deps: false
     compiler_config:
-      bytecode_version: 6
+      bytecode_version: ~
       known_attributes:
         - bytecode_instruction
         - deprecated
@@ -39,7 +39,6 @@ compiled_package_info:
         - "fmt::skip"
         - legacy_entry_fun
         - "lint::allow_unsafe_randomness"
-        - "lint::skip"
         - native_interface
         - randomness
         - resource_group
@@ -51,8 +50,6 @@ compiled_package_info:
       skip_attribute_checks: false
       compiler_version: ~
       language_version: ~
-      experiments:
-        - optimize=on
 dependencies:
   - AptosStdlib
   - MoveStdlib
