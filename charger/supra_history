@@ -1,0 +1,11 @@
+Local: (2024-10-08 16:37:51.949451464 +00:00)	 Utc: (2024-10-08 16:37:51.952008839 UTC)
+
+CMD:
+ImportProfile(ImportProfile { name: "emmette2", private_key: "9ef6575c23e5211b8c0942facb4fe10d1051fa4f1fcb24677ade5e44115dd34d", force_pass: false })
+Output:
+-------------------------- Profile List ---------------------------------
+	(*) emmette2
+SmrPublicKey { account_address: "0xf4125b6cf73835e5fb510f4a638ed5e3885a256b5b9bc8ed2e3306468b01720a", ed25519_public_key: ac1acc5656e9df0f5e04863e5ecbade2d390b2c2264e23c84ee8e89dc8b438bf }
+-------------------------------------------------------------------------
+
+
