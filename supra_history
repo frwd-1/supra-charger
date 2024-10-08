@@ -1,0 +1,782 @@
+Local: (2024-10-08 07:06:44.501812052 +00:00)	 Utc: (2024-10-08 07:06:44.504300718 UTC)
+
+CMD:
+GenerateProfile(GenerateProfileArgs { name: Some("emmette2"), force_pass: false })
+Output:
+-------------------------- Profile List ---------------------------------
+	(*) emmette2
+SmrPublicKey { account_address: "0xf4125b6cf73835e5fb510f4a638ed5e3885a256b5b9bc8ed2e3306468b01720a", ed25519_public_key: ac1acc5656e9df0f5e04863e5ecbade2d390b2c2264e23c84ee8e89dc8b438bf }
+-------------------------------------------------------------------------
+
+
+Local: (2024-10-08 07:07:55.293478167 +00:00)	 Utc: (2024-10-08 07:07:55.297052626 UTC)
+
+CMD:
+AccountTool::FundWithFaucet
+Output:
+{
+  "Accepted": "0x2f74e8b96ca47fc81b94be59da5b57a919b6889a8402ba420561788f5d4514fc"
+}
+
+
+Local: (2024-10-08 07:08:27.514784002 +00:00)	 Utc: (2024-10-08 07:08:27.517640168 UTC)
+
+CMD:
+ListProfile(ListProfileArgs { reveal_secrets: true })
+Output:
+	(*) emmette2
+ed25519_secret_key: 9ef6575c23e5211b8c0942facb4fe10d1051fa4f1fcb24677ade5e44115dd34d
+SmrPublicKey { account_address: "0xf4125b6cf73835e5fb510f4a638ed5e3885a256b5b9bc8ed2e3306468b01720a", ed25519_public_key: ac1acc5656e9df0f5e04863e5ecbade2d390b2c2264e23c84ee8e89dc8b438bf }
+
+
+
+Local: (2024-10-08 07:11:39.606494341 +00:00)	 Utc: (2024-10-08 07:11:39.609448466 UTC)
+
+CMD:
+Init
+Output:
+{
+  "Result": "Success"
+}
+
+
+Local: (2024-10-08 07:21:05.844826214 +00:00)	 Utc: (2024-10-08 07:21:05.847804006 UTC)
+
+CMD:
+Compile
+Output:
+{
+  "Result": []
+}
+
+
+Local: (2024-10-08 07:22:33.367379880 +00:00)	 Utc: (2024-10-08 07:22:33.370975796 UTC)
+
+CMD:
+Publish
+Output:
+{
+  "authenticator": {
+    "Move": {
+      "Ed25519": {
+        "public_key": "0xac1acc5656e9df0f5e04863e5ecbade2d390b2c2264e23c84ee8e89dc8b438bf",
+        "signature": "0xe62b2ef097bacf339d4d5d7514e3d67e6f75250861b1fa4ed825cfe667ad286a7e7541e9519058c89340506c66bdab5c4d7472828daef0aed933dab48dc9690f"
+      }
+    }
+  },
+  "block_header": {
+    "hash": "0x45a066ad4162349f7771be52fb2e578b26eadc7858148798910c00aeda2eb86b",
+    "height": 256094,
+    "timestamp": {
+      "microseconds_since_unix_epoch": 1728372150593815,
+      "utc_date_time": "2024-10-08T07:22:30.593815+00:00"
+    }
+  },
+  "hash": "0x1467058fd67436acb5e6839b0177cae280a2cf2627c54a00b9a53ee556400986",
+  "header": {
+    "chain_id": 6,
+    "expiration_timestamp": {
+      "microseconds_since_unix_epoch": 1728372179000000,
+      "utc_date_time": "2024-10-08T07:22:59+00:00"
+    },
+    "sender": {
+      "Move": "0xf4125b6cf73835e5fb510f4a638ed5e3885a256b5b9bc8ed2e3306468b01720a"
+    },
+    "sequence_number": 0,
+    "gas_unit_price": 100,
+    "max_gas_amount": 500000
+  },
+  "payload": {
+    "Move": {
+      "type": "entry_function_payload",
+      "function": "0x1::code::publish_package_txn",
+      "type_arguments": [],
+      "arguments": [
+        "0x0c737570726143686172676572010000000000000000403344433334343246343736443135303544324544384332433341333032444334344136364332414242374441303443434532324544433641433132343634433083021f8b08000000000002ff4d90cd6ac3301084ef7a8aa07b2cd9b21cb7d04328f4584a434fc68795b4fe21b12524dbcde3576a48c8716667f8866d1ce833f4d8921926dcbded68589d87f7017c8f9e920d7d18ed9c0e79c6334e09accb607d884ed312d280311e43c0d012bcc2e42e78bc39a9c2af5d99175255ba3b885a48949d9239ef4aa8448d46a2a86b0985ac94542f4a47ab4021785556b5e2f9a1e04023c2e0b67fc224c3e16c70d62386ec94f67ef8b8fed7fa734bfa7149e861595c78652cca615599b6133bfd7c7d1f3fed0566066eb161afadc72c0628f1b8a5522451125665469fe42d35d90d597707b0ffffec1ffa3ef079534bfe009b246c6557010000000300000000000000000000000000000000000000000000000000000000000000010b4170746f735374646c696200000000000000000000000000000000000000000000000000000000000000010a4d6f76655374646c696200000000000000000000000000000000000000000000000000000000000000010e53757072614672616d65776f726b00",
+        []
+      ]
+    }
+  },
+  "output": {
+    "Move": {
+      "gas_used": 700,
+      "events": [
+        {
+          "guid": {
+            "creation_number": "0",
+            "account_address": "0x0"
+          },
+          "sequence_number": "0",
+          "type": "0x1::code::PublishPackage",
+          "data": {
+            "code_address": "0xf4125b6cf73835e5fb510f4a638ed5e3885a256b5b9bc8ed2e3306468b01720a",
+            "is_upgrade": false
+          }
+        },
+        {
+          "guid": {
+            "creation_number": "0",
+            "account_address": "0x0"
+          },
+          "sequence_number": "0",
+          "type": "0x1::transaction_fee::FeeStatement",
+          "data": {
+            "execution_gas_units": "4",
+            "io_gas_units": "67",
+            "storage_fee_quants": "62920",
+            "storage_fee_refund_quants": "0",
+            "total_charge_gas_units": "700"
+          }
+        }
+      ],
+      "vm_status": "Executed successfully"
+    }
+  },
+  "status": "Success"
+}
+
+
+Local: (2024-10-08 07:23:51.223362055 +00:00)	 Utc: (2024-10-08 07:23:51.227322096 UTC)
+
+CMD:
+Run
+Output:
+{
+  "authenticator": {
+    "Move": {
+      "Ed25519": {
+        "public_key": "0xac1acc5656e9df0f5e04863e5ecbade2d390b2c2264e23c84ee8e89dc8b438bf",
+        "signature": "0x2cbb4e7b6281d94ab71ad2a32543a46f1c0bcff14a041e7a55f2b5741f0af60a1e0a73f9b4b37663b6c64c4df20e266a9b76bd6410b5a4182bc1e06be965840b"
+      }
+    }
+  },
+  "block_header": {
+    "hash": "0xa768f6d4aefd94914b7f624fdb45073fa24fa001fa01ce9772cf087b1ce454cb",
+    "height": 256127,
+    "timestamp": {
+      "microseconds_since_unix_epoch": 1728372229884914,
+      "utc_date_time": "2024-10-08T07:23:49.884914+00:00"
+    }
+  },
+  "hash": "0x7dc97487b2eeae43f9110916d29e88fd99bc5d4a981f5e388bbe479954659dd5",
+  "header": {
+    "chain_id": 6,
+    "expiration_timestamp": {
+      "microseconds_since_unix_epoch": 1728372258000000,
+      "utc_date_time": "2024-10-08T07:24:18+00:00"
+    },
+    "sender": {
+      "Move": "0xf4125b6cf73835e5fb510f4a638ed5e3885a256b5b9bc8ed2e3306468b01720a"
+    },
+    "sequence_number": 1,
+    "gas_unit_price": 100,
+    "max_gas_amount": 500000
+  },
+  "payload": {
+    "Move": {
+      "type": "entry_function_payload",
+      "function": "0xf4125b6cf73835e5fb510f4a638ed5e3885a256b5b9bc8ed2e3306468b01720a::transfer::two_by_two",
+      "type_arguments": [],
+      "arguments": [
+        "0xd007000000000000",
+        "0x5ba50bc539cbcaae364f596d2e927a6b98b0c7ca1261b2fc9bc691a8320a37d3",
+        "0x1ca840f331ae2cabb7f46e6121b45f66c32e1a609fe172fc7c1c5b12f6bba493"
+      ]
+    }
+  },
+  "output": {
+    "Move": {
+      "gas_used": 3,
+      "events": [
+        {
+          "guid": {
+            "creation_number": "0",
+            "account_address": "0x0"
+          },
+          "sequence_number": "0",
+          "type": "0x1::transaction_fee::FeeStatement",
+          "data": {
+            "execution_gas_units": "3",
+            "io_gas_units": "0",
+            "storage_fee_quants": "0",
+            "storage_fee_refund_quants": "0",
+            "total_charge_gas_units": "3"
+          }
+        }
+      ],
+      "vm_status": "LINKER_ERROR"
+    }
+  },
+  "status": "Fail"
+}
+
+
+Local: (2024-10-08 07:24:52.116102222 +00:00)	 Utc: (2024-10-08 07:24:52.118758472 UTC)
+
+CMD:
+ListProfile(ListProfileArgs { reveal_secrets: false })
+Output:
+-------------------------- Profile List ---------------------------------
+	(*) emmette2
+SmrPublicKey { account_address: "0xf4125b6cf73835e5fb510f4a638ed5e3885a256b5b9bc8ed2e3306468b01720a", ed25519_public_key: ac1acc5656e9df0f5e04863e5ecbade2d390b2c2264e23c84ee8e89dc8b438bf }
+-------------------------------------------------------------------------
+
+
+Local: (2024-10-08 07:26:06.089752631 +00:00)	 Utc: (2024-10-08 07:26:06.093320006 UTC)
+
+CMD:
+Run
+Output:
+{
+  "authenticator": {
+    "Move": {
+      "Ed25519": {
+        "public_key": "0xac1acc5656e9df0f5e04863e5ecbade2d390b2c2264e23c84ee8e89dc8b438bf",
+        "signature": "0x08ba312fb2ead2741703952eba8bbcd078d403cc9e0ad7a3de7564408d149807d47028156e9ebd48bdd4c3b3315a9fee5d228ec849daa75f62fd7cc01c8aad00"
+      }
+    }
+  },
+  "block_header": {
+    "hash": "0x2a1973b9afc174aea55fbe04c52991399df85178a6d0bf709f75a0eb6f72cd8c",
+    "height": 256181,
+    "timestamp": {
+      "microseconds_since_unix_epoch": 1728372363065492,
+      "utc_date_time": "2024-10-08T07:26:03.065492+00:00"
+    }
+  },
+  "hash": "0xe1890ef3f550af27dcd1ef2518a11026155950c9b0dd3e26eefb2d1c4e9f151c",
+  "header": {
+    "chain_id": 6,
+    "expiration_timestamp": {
+      "microseconds_since_unix_epoch": 1728372391000000,
+      "utc_date_time": "2024-10-08T07:26:31+00:00"
+    },
+    "sender": {
+      "Move": "0xf4125b6cf73835e5fb510f4a638ed5e3885a256b5b9bc8ed2e3306468b01720a"
+    },
+    "sequence_number": 2,
+    "gas_unit_price": 100,
+    "max_gas_amount": 500000
+  },
+  "payload": {
+    "Move": {
+      "type": "entry_function_payload",
+      "function": "0xf4125b6cf73835e5fb510f4a638ed5e3885a256b5b9bc8ed2e3306468b01720a::transfer::two_by_two",
+      "type_arguments": [],
+      "arguments": [
+        "0x1400000000000000",
+        "0x5ba50bc539cbcaae364f596d2e927a6b98b0c7ca1261b2fc9bc691a8320a37d3",
+        "0x1ca840f331ae2cabb7f46e6121b45f66c32e1a609fe172fc7c1c5b12f6bba493"
+      ]
+    }
+  },
+  "output": {
+    "Move": {
+      "gas_used": 3,
+      "events": [
+        {
+          "guid": {
+            "creation_number": "0",
+            "account_address": "0x0"
+          },
+          "sequence_number": "0",
+          "type": "0x1::transaction_fee::FeeStatement",
+          "data": {
+            "execution_gas_units": "3",
+            "io_gas_units": "0",
+            "storage_fee_quants": "0",
+            "storage_fee_refund_quants": "0",
+            "total_charge_gas_units": "3"
+          }
+        }
+      ],
+      "vm_status": "LINKER_ERROR"
+    }
+  },
+  "status": "Fail"
+}
+
+
+Local: (2024-10-08 07:34:29.677696169 +00:00)	 Utc: (2024-10-08 07:34:29.681218211 UTC)
+
+CMD:
+Run
+Output:
+{
+  "authenticator": {
+    "Move": {
+      "Ed25519": {
+        "public_key": "0xac1acc5656e9df0f5e04863e5ecbade2d390b2c2264e23c84ee8e89dc8b438bf",
+        "signature": "0xe373284a230276ac8966ae31d7c6016e8256fdb83aa9bbe11ecca15e02a1106d399793ddf21fddd7e3e957e7259bb1a3e8cc95f6be13d987f72e488d938ecf05"
+      }
+    }
+  },
+  "block_header": {
+    "hash": "0x0405fb67d73f1c344eda08330db15f3fc5212cec7f9ea98d63c8098067bab852",
+    "height": 256379,
+    "timestamp": {
+      "microseconds_since_unix_epoch": 1728372868161138,
+      "utc_date_time": "2024-10-08T07:34:28.161138+00:00"
+    }
+  },
+  "hash": "0xd0590c28b2bd1d6eb4e35b0edd420577f8a8e0b3dd7b2746b26529a73e64bc8d",
+  "header": {
+    "chain_id": 6,
+    "expiration_timestamp": {
+      "microseconds_since_unix_epoch": 1728372897000000,
+      "utc_date_time": "2024-10-08T07:34:57+00:00"
+    },
+    "sender": {
+      "Move": "0xf4125b6cf73835e5fb510f4a638ed5e3885a256b5b9bc8ed2e3306468b01720a"
+    },
+    "sequence_number": 3,
+    "gas_unit_price": 100,
+    "max_gas_amount": 500000
+  },
+  "payload": {
+    "Move": {
+      "type": "entry_function_payload",
+      "function": "0xf4125b6cf73835e5fb510f4a638ed5e3885a256b5b9bc8ed2e3306468b01720a::transfer::two_by_two",
+      "type_arguments": [],
+      "arguments": [
+        "0x1400000000000000",
+        "0x5ba50bc539cbcaae364f596d2e927a6b98b0c7ca1261b2fc9bc691a8320a37d3",
+        "0x1ca840f331ae2cabb7f46e6121b45f66c32e1a609fe172fc7c1c5b12f6bba493"
+      ]
+    }
+  },
+  "output": {
+    "Move": {
+      "gas_used": 3,
+      "events": [
+        {
+          "guid": {
+            "creation_number": "0",
+            "account_address": "0x0"
+          },
+          "sequence_number": "0",
+          "type": "0x1::transaction_fee::FeeStatement",
+          "data": {
+            "execution_gas_units": "3",
+            "io_gas_units": "0",
+            "storage_fee_quants": "0",
+            "storage_fee_refund_quants": "0",
+            "total_charge_gas_units": "3"
+          }
+        }
+      ],
+      "vm_status": "LINKER_ERROR"
+    }
+  },
+  "status": "Fail"
+}
+
+
+Local: (2024-10-08 07:36:16.609514719 +00:00)	 Utc: (2024-10-08 07:36:16.612089177 UTC)
+
+CMD:
+Compile
+Output:
+{
+  "Result": []
+}
+
+
+Local: (2024-10-08 07:36:39.081163674 +00:00)	 Utc: (2024-10-08 07:36:39.084501924 UTC)
+
+CMD:
+Publish
+Output:
+{
+  "authenticator": {
+    "Move": {
+      "Ed25519": {
+        "public_key": "0xac1acc5656e9df0f5e04863e5ecbade2d390b2c2264e23c84ee8e89dc8b438bf",
+        "signature": "0x95cd6a01c66657f9ffb035051457317bec2b56cc9645321e205f68eefa285096e20ab87a76adf201a5f6e5642141c70ff43f31d39434c06ba75458d6292fd909"
+      }
+    }
+  },
+  "block_header": {
+    "hash": "0xa888db6062e5f5b437a09190edca73a6b3149ea65091613d18cf749e01b2c01e",
+    "height": 256421,
+    "timestamp": {
+      "microseconds_since_unix_epoch": 1728372994433728,
+      "utc_date_time": "2024-10-08T07:36:34.433728+00:00"
+    }
+  },
+  "hash": "0x5b4ad5d71cf9ed744e9b3abfe4603100a7b344f1ba80f0f0cc8c0bb5dce653cb",
+  "header": {
+    "chain_id": 6,
+    "expiration_timestamp": {
+      "microseconds_since_unix_epoch": 1728373023000000,
+      "utc_date_time": "2024-10-08T07:37:03+00:00"
+    },
+    "sender": {
+      "Move": "0xf4125b6cf73835e5fb510f4a638ed5e3885a256b5b9bc8ed2e3306468b01720a"
+    },
+    "sequence_number": 4,
+    "gas_unit_price": 100,
+    "max_gas_amount": 500000
+  },
+  "payload": {
+    "Move": {
+      "type": "entry_function_payload",
+      "function": "0x1::code::publish_package_txn",
+      "type_arguments": [],
+      "arguments": [
+        "0x0c737570726143686172676572010000000000000000403344433334343246343736443135303544324544384332433341333032444334344136364332414242374441303443434532324544433641433132343634433083021f8b08000000000002ff4d90cd6ac3301084ef7a8aa07b2cd9b21cb7d04328f4584a434fc68795b4fe21b12524dbcde3576a48c8716667f8866d1ce833f4d8921926dcbded68589d87f7017c8f9e920d7d18ed9c0e79c6334e09accb607d884ed312d280311e43c0d012bcc2e42e78bc39a9c2af5d99175255ba3b885a48949d9239ef4aa8448d46a2a86b0985ac94542f4a47ab4021785556b5e2f9a1e04023c2e0b67fc224c3e16c70d62386ec94f67ef8b8fed7fa734bfa7149e861595c78652cca615599b6133bfd7c7d1f3fed0566066eb161afadc72c0628f1b8a5522451125665469fe42d35d90d597707b0ffffec1ffa3ef079534bfe009b246c6557010000000300000000000000000000000000000000000000000000000000000000000000010b4170746f735374646c696200000000000000000000000000000000000000000000000000000000000000010a4d6f76655374646c696200000000000000000000000000000000000000000000000000000000000000010e53757072614672616d65776f726b00",
+        []
+      ]
+    }
+  },
+  "output": {
+    "Move": {
+      "gas_used": 71,
+      "events": [
+        {
+          "guid": {
+            "creation_number": "0",
+            "account_address": "0x0"
+          },
+          "sequence_number": "0",
+          "type": "0x1::code::PublishPackage",
+          "data": {
+            "code_address": "0xf4125b6cf73835e5fb510f4a638ed5e3885a256b5b9bc8ed2e3306468b01720a",
+            "is_upgrade": true
+          }
+        },
+        {
+          "guid": {
+            "creation_number": "0",
+            "account_address": "0x0"
+          },
+          "sequence_number": "0",
+          "type": "0x1::transaction_fee::FeeStatement",
+          "data": {
+            "execution_gas_units": "4",
+            "io_gas_units": "68",
+            "storage_fee_quants": "0",
+            "storage_fee_refund_quants": "0",
+            "total_charge_gas_units": "71"
+          }
+        }
+      ],
+      "vm_status": "Executed successfully"
+    }
+  },
+  "status": "Success"
+}
+
+
+Local: (2024-10-08 07:36:53.964453 +00:00)	 Utc: (2024-10-08 07:36:53.968044792 UTC)
+
+CMD:
+Run
+Output:
+{
+  "authenticator": {
+    "Move": {
+      "Ed25519": {
+        "public_key": "0xac1acc5656e9df0f5e04863e5ecbade2d390b2c2264e23c84ee8e89dc8b438bf",
+        "signature": "0xb688d8695baef130ccc27f674044ce7eb85c01bdaf41272ce571b3e00482cb8c6e999d02cff34a101fa14f723d5d61a279e266aee83d286010eb17d8475cca06"
+      }
+    }
+  },
+  "block_header": {
+    "hash": "0x7eff45a21a44c18d8796e7dbde5c87e9afc432654f31b4462b06b1a7f973ba15",
+    "height": 256431,
+    "timestamp": {
+      "microseconds_since_unix_epoch": 1728373012442854,
+      "utc_date_time": "2024-10-08T07:36:52.442854+00:00"
+    }
+  },
+  "hash": "0x080d2ca62903b2f1d72e311b6bd87f4fb83ce3f039ed01595fff472461b8d6b7",
+  "header": {
+    "chain_id": 6,
+    "expiration_timestamp": {
+      "microseconds_since_unix_epoch": 1728373041000000,
+      "utc_date_time": "2024-10-08T07:37:21+00:00"
+    },
+    "sender": {
+      "Move": "0xf4125b6cf73835e5fb510f4a638ed5e3885a256b5b9bc8ed2e3306468b01720a"
+    },
+    "sequence_number": 5,
+    "gas_unit_price": 100,
+    "max_gas_amount": 500000
+  },
+  "payload": {
+    "Move": {
+      "type": "entry_function_payload",
+      "function": "0xf4125b6cf73835e5fb510f4a638ed5e3885a256b5b9bc8ed2e3306468b01720a::transfer::two_by_two",
+      "type_arguments": [],
+      "arguments": [
+        "0x1400000000000000",
+        "0x5ba50bc539cbcaae364f596d2e927a6b98b0c7ca1261b2fc9bc691a8320a37d3",
+        "0x1ca840f331ae2cabb7f46e6121b45f66c32e1a609fe172fc7c1c5b12f6bba493"
+      ]
+    }
+  },
+  "output": {
+    "Move": {
+      "gas_used": 3,
+      "events": [
+        {
+          "guid": {
+            "creation_number": "0",
+            "account_address": "0x0"
+          },
+          "sequence_number": "0",
+          "type": "0x1::transaction_fee::FeeStatement",
+          "data": {
+            "execution_gas_units": "3",
+            "io_gas_units": "0",
+            "storage_fee_quants": "0",
+            "storage_fee_refund_quants": "0",
+            "total_charge_gas_units": "3"
+          }
+        }
+      ],
+      "vm_status": "LINKER_ERROR"
+    }
+  },
+  "status": "Fail"
+}
+
+
+Local: (2024-10-08 07:37:41.904599675 +00:00)	 Utc: (2024-10-08 07:37:41.907600217 UTC)
+
+CMD:
+ListProfile(ListProfileArgs { reveal_secrets: false })
+Output:
+-------------------------- Profile List ---------------------------------
+	(*) emmette2
+SmrPublicKey { account_address: "0xf4125b6cf73835e5fb510f4a638ed5e3885a256b5b9bc8ed2e3306468b01720a", ed25519_public_key: ac1acc5656e9df0f5e04863e5ecbade2d390b2c2264e23c84ee8e89dc8b438bf }
+-------------------------------------------------------------------------
+
+
+Local: (2024-10-08 07:46:23.393412625 +00:00)	 Utc: (2024-10-08 07:46:23.396764333 UTC)
+
+CMD:
+Compile
+Output:
+{
+  "Result": []
+}
+
+
+Local: (2024-10-08 07:46:54.079154125 +00:00)	 Utc: (2024-10-08 07:46:54.082459125 UTC)
+
+CMD:
+Publish
+Output:
+{
+  "authenticator": {
+    "Move": {
+      "Ed25519": {
+        "public_key": "0xac1acc5656e9df0f5e04863e5ecbade2d390b2c2264e23c84ee8e89dc8b438bf",
+        "signature": "0xfb1890fdf4d798379c04a3fb53cb42892df17bebbfd1137d3a7424c3f82034b925476ecf978fba49885ecabc8e3f26ad2c357f02f3b434731a5ae8b928004e0b"
+      }
+    }
+  },
+  "block_header": {
+    "hash": "0x38c1d5346aaec7c02b8a8815b652351a6d62024f10388942624d5397e8064551",
+    "height": 256674,
+    "timestamp": {
+      "microseconds_since_unix_epoch": 1728373611426544,
+      "utc_date_time": "2024-10-08T07:46:51.426544+00:00"
+    }
+  },
+  "hash": "0x809a0aa9109136b3c0be9bb2868c151cebdbd17f1adcd4bbfd6a336f765f947f",
+  "header": {
+    "chain_id": 6,
+    "expiration_timestamp": {
+      "microseconds_since_unix_epoch": 1728373635000000,
+      "utc_date_time": "2024-10-08T07:47:15+00:00"
+    },
+    "sender": {
+      "Move": "0xf4125b6cf73835e5fb510f4a638ed5e3885a256b5b9bc8ed2e3306468b01720a"
+    },
+    "sequence_number": 6,
+    "gas_unit_price": 100,
+    "max_gas_amount": 500000
+  },
+  "payload": {
+    "Move": {
+      "type": "entry_function_payload",
+      "function": "0x1::code::publish_package_txn",
+      "type_arguments": [],
+      "arguments": [
+        "0x0c737570726143686172676572010000000000000000403344433334343246343736443135303544324544384332433341333032444334344136364332414242374441303443434532324544433641433132343634433083021f8b08000000000002ff4d90cd6ac3301084ef7a8aa07b2cd9b21cb7d04328f4584a434fc68795b4fe21b12524dbcde3576a48c8716667f8866d1ce833f4d8921926dcbded68589d87f7017c8f9e920d7d18ed9c0e79c6334e09accb607d884ed312d280311e43c0d012bcc2e42e78bc39a9c2af5d99175255ba3b885a48949d9239ef4aa8448d46a2a86b0985ac94542f4a47ab4021785556b5e2f9a1e04023c2e0b67fc224c3e16c70d62386ec94f67ef8b8fed7fa734bfa7149e861595c78652cca615599b6133bfd7c7d1f3fed0566066eb161afadc72c0628f1b8a5522451125665469fe42d35d90d597707b0ffffec1ffa3ef079534bfe009b246c6557010000000300000000000000000000000000000000000000000000000000000000000000010b4170746f735374646c696200000000000000000000000000000000000000000000000000000000000000010a4d6f76655374646c696200000000000000000000000000000000000000000000000000000000000000010e53757072614672616d65776f726b00",
+        []
+      ]
+    }
+  },
+  "output": {
+    "Move": {
+      "gas_used": 71,
+      "events": [
+        {
+          "guid": {
+            "creation_number": "0",
+            "account_address": "0x0"
+          },
+          "sequence_number": "0",
+          "type": "0x1::code::PublishPackage",
+          "data": {
+            "code_address": "0xf4125b6cf73835e5fb510f4a638ed5e3885a256b5b9bc8ed2e3306468b01720a",
+            "is_upgrade": true
+          }
+        },
+        {
+          "guid": {
+            "creation_number": "0",
+            "account_address": "0x0"
+          },
+          "sequence_number": "0",
+          "type": "0x1::transaction_fee::FeeStatement",
+          "data": {
+            "execution_gas_units": "4",
+            "io_gas_units": "68",
+            "storage_fee_quants": "0",
+            "storage_fee_refund_quants": "0",
+            "total_charge_gas_units": "71"
+          }
+        }
+      ],
+      "vm_status": "Executed successfully"
+    }
+  },
+  "status": "Success"
+}
+
+
+Local: (2024-10-08 07:52:18.403684220 +00:00)	 Utc: (2024-10-08 07:52:18.406258386 UTC)
+
+CMD:
+Compile
+Output:
+{
+  "Result": []
+}
+
+
+Local: (2024-10-08 08:03:43.463469509 +00:00)	 Utc: (2024-10-08 08:03:43.466791884 UTC)
+
+CMD:
+Compile
+Output:
+{
+  "Result": []
+}
+
+
+Local: (2024-10-08 08:04:31.710572420 +00:00)	 Utc: (2024-10-08 08:04:31.712721420 UTC)
+
+CMD:
+Compile
+Output:
+{
+  "Result": []
+}
+
+
+Local: (2024-10-08 08:05:47.042788844 +00:00)	 Utc: (2024-10-08 08:05:47.044764052 UTC)
+
+CMD:
+Compile
+Output:
+{
+  "Result": [
+    "f4125b6cf73835e5fb510f4a638ed5e3885a256b5b9bc8ed2e3306468b01720a::transfer"
+  ]
+}
+
+
+Local: (2024-10-08 08:06:43.398304051 +00:00)	 Utc: (2024-10-08 08:06:43.401634092 UTC)
+
+CMD:
+Publish
+Output:
+{
+  "authenticator": {
+    "Move": {
+      "Ed25519": {
+        "public_key": "0xac1acc5656e9df0f5e04863e5ecbade2d390b2c2264e23c84ee8e89dc8b438bf",
+        "signature": "0x19fa9615f8fcb2fb7a99ab5529ab9ba3725c58d9bcabba0706a2ce48aa41e8bf4be9dc96f2bd0d93785953ea4d5606bec1edad592f9716702708c88b328eb600"
+      }
+    }
+  },
+  "block_header": {
+    "hash": "0x7da45da790eb519e65a410a36bbeb2507e0891bf1be161d57d46736f03f1175d",
+    "height": 257164,
+    "timestamp": {
+      "microseconds_since_unix_epoch": 1728374801597803,
+      "utc_date_time": "2024-10-08T08:06:41.597803+00:00"
+    }
+  },
+  "hash": "0xbc84f25fb501169eeda688d6e80cba5c539326e3bf83bc188ff7b6a1ea73857b",
+  "header": {
+    "chain_id": 6,
+    "expiration_timestamp": {
+      "microseconds_since_unix_epoch": 1728374830000000,
+      "utc_date_time": "2024-10-08T08:07:10+00:00"
+    },
+    "sender": {
+      "Move": "0xf4125b6cf73835e5fb510f4a638ed5e3885a256b5b9bc8ed2e3306468b01720a"
+    },
+    "sequence_number": 7,
+    "gas_unit_price": 100,
+    "max_gas_amount": 500000
+  },
+  "payload": {
+    "Move": {
+      "type": "entry_function_payload",
+      "function": "0x1::code::publish_package_txn",
+      "type_arguments": [],
+      "arguments": [
+        "0x0c737570726143686172676572010000000000000000403344304241414634393446323637333335384530303131323132314133303430384131344542443232313844374134394439353643383245424346423841314583021f8b08000000000002ff4d90cb6e83301045f7fe0ae43d603026b4521651a52eabaa515788c5d81e1e4ac0960d349f5fbb51aa2cef9d199da3692da80b0cd89105664c8e09f59b75f036821bd051b2a3f39359e2a0c858c628816d1d8df3a1693b425ad0daa1f7e83b823798ed154ff726395276ebaba214b256fd81375ca0e8a528585f41cd1bd40279d30828452d857c912a542572ceeaaa6e242b0e25031a081af7f489120b8b8bc6454de8b373d47d7741fec7b84b4786698db2e3ba5aff9ae7218e9bcc9499f3f3f7e7d7e9c35c61c9c1aec6a7ca38ccc202250ef778144894f84deac9c578df9acd8e79ff00e47fef49fff343f0d9a923bfd35d095c5601000001087472616e7366657287021f8b08000000000002ff9d90414ec4300c45f73d8557a82365895864000971040e50651a1722daa4b213ca08cddd49d3760245d9904d2cff2fdbef0f4e871e013fd530f6f8a43521b3949e94e50e09beaa0ae20b8cc06124d574a4069c1cbd4bb9345a67ecb16c5ae4a48fe1d49b16d07a3a43172cf8c935a77313bf3a19e6d719622fe186cdab4512d7be1a5cb0be59e570779b25cdd7be5a007e6b8cadb37a271e22da669a6fccccf7994bca97b97e8ee5639d5688bc4dfc3ce970fcd7b47c9e80ddb834ef5295a25bc7e7e018ad462a26b7cb8cb035f831fb8ba9f4e8130b3cac4893f16f9ad454425a2ed840fe24a271746c7cbdad16a9bfda22e8e51b7e18212c8c02000000000300000000000000000000000000000000000000000000000000000000000000010b4170746f735374646c696200000000000000000000000000000000000000000000000000000000000000010a4d6f76655374646c696200000000000000000000000000000000000000000000000000000000000000010e53757072614672616d65776f726b00",
+        [
+          "0xa11ceb0b060000000801000602060a03101c042c0605322b075d4408a101400ce1012c000001010102010404010001020508000000000100000302010001060506010001070701010001000801010002040304040403060c03050004060c030505010b0001080101080102060c03010b0001090002050b0001090003060c0503087472616e7366657204636f696e0a73757072615f636f696e0a74776f5f62795f74776f04436f696e095375707261436f696e087769746864726177076465706f736974f4125b6cf73835e5fb510f4a638ed5e3885a256b5b9bc8ed2e3306468b01720a00000000000000000000000000000000000000000000000000000000000000010001040003080b000b0138000c030b020b033801020101040001090a000b020a0138020b000b030b0138020200"
+        ]
+      ]
+    }
+  },
+  "output": {
+    "Move": {
+      "gas_used": 734,
+      "events": [
+        {
+          "guid": {
+            "creation_number": "0",
+            "account_address": "0x0"
+          },
+          "sequence_number": "0",
+          "type": "0x1::code::PublishPackage",
+          "data": {
+            "code_address": "0xf4125b6cf73835e5fb510f4a638ed5e3885a256b5b9bc8ed2e3306468b01720a",
+            "is_upgrade": true
+          }
+        },
+        {
+          "guid": {
+            "creation_number": "0",
+            "account_address": "0x0"
+          },
+          "sequence_number": "0",
+          "type": "0x1::transaction_fee::FeeStatement",
+          "data": {
+            "execution_gas_units": "5",
+            "io_gas_units": "68",
+            "storage_fee_quants": "66200",
+            "storage_fee_refund_quants": "0",
+            "total_charge_gas_units": "734"
+          }
+        }
+      ],
+      "vm_status": "Executed successfully"
+    }
+  },
+  "status": "Success"
+}
+
+
